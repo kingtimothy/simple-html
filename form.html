@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+        <title> My first web page! - Form</title>
+        <meta name="description" content="This is my very first website!"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    
+    <body>
+        
+        <h1>Fill Out Form</h1>
+        
+        <form action="/action_page.php" method="GET">
+            
+      	    First Name: <br/>     <input type="text" name="firstname" value="(first name)"><br/><br/>  <!-- whatever inside the value tag is pre-filled form -->
+      	    
+            Last Name: <br/>      <input type="text" name="lastname" value=""><br/><br/>
+            
+            Email: <br/>          <input type="text" name="email" value=""><br/><br/>
+            
+            Password: <br/>       <input type="password" name="password" value=""><br/><br/>
+            
+            Message: <br/>        <textarea name="message" rows="10" cols="30">Type stuffs here..</textarea><br/><br/>
+            
+            Send Email To: <br/>
+            
+            <select name="department">
+                <option value="tech">Tech Support</option>
+                <option value="sales">Sales</option>
+                <option value="accounting">Accounting</option>
+                <option value="ceo">CEO</option>
+            </select>
+            
+            <input type="submit" value="Send Email">
+            
+        </form>
+
+        
+        
+        <br /> <br /> <br />
+        Go to 
+        <a href="index.html">Home Page</a>.
+        <br /> <br />    
+        &copy; Timothy King - All Rights Researved
+        
+    </body>
+</html>
