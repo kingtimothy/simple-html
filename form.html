@@ -2,8 +2,15 @@
 <html lang="en-AU">
     <head>
         <title> My first web page! - Form</title>
-        <meta name="description" content="This is my very first website!"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
     </head>
     
     <body>
@@ -11,27 +18,31 @@
         <h1>Fill Out Form</h1>
         
         <form action="/action_page.php" method="GET">
+            <div class="form-group">
             
-      	    First Name: <br/>     <input type="text" name="firstname" value="(first name)"><br/><br/>  <!-- whatever inside the value tag is pre-filled form -->
-      	    
-            Last Name: <br/>      <input type="text" name="lastname" value=""><br/><br/>
-            
-            Email: <br/>          <input type="text" name="email" value=""><br/><br/>
-            
-            Password: <br/>       <input type="password" name="password" value=""><br/><br/>
-            
-            Message: <br/>        <textarea name="message" rows="10" cols="30">Type stuffs here..</textarea><br/><br/>
-            
-            Send Email To: <br/>
-            
-            <select name="department">
-                <option value="tech">Tech Support</option>
-                <option value="sales">Sales</option>
-                <option value="accounting">Accounting</option>
-                <option value="ceo">CEO</option>
-            </select>
-            
-            <input type="submit" value="Send Email">
+              	    First Name: <br/>     <input type="text" name="firstname" value="(first name)" class="form-control"><br/><br/>  <!-- whatever inside the value tag is pre-filled form -->
+              	    
+                    Last Name: <br/>      <input type="text" name="lastname" value="" class="form-control"><br/><br/>
+                    
+                    Email: <br/>          <input type="text" name="email" value="" class="form-control"><br/><br/>
+                    
+                    Password: <br/>       <input type="password" name="password" value="" class="form-control"><br/><br/>
+                    
+                    Message: <br/>        <textarea name="message" rows="10" cols="30" class="form-control">Type stuffs here..</textarea><br/><br/>
+                    
+                    Send Email To: <br/>
+                    
+                    <select name="department" class="form-control">
+                        <option value="tech">Tech Support</option>
+                        <option value="sales">Sales</option>
+                        <option value="accounting">Accounting</option>
+                        <option value="ceo">CEO</option>
+                    </select>
+                    
+                    <br />
+                    <!-- <input type="submit" value="Send Email"> -->
+                    <button type="button" class="btn btn-primary">Send email.</button>
+            </div>
             
         </form>
 
@@ -43,5 +54,10 @@
         <br /> <br />    
         &copy; Timothy King - All Rights Researved
         
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
     </body>
 </html>
